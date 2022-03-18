@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: "/mongabay/petroleras/"
+    publicPath: process.env.VUE_APP_BASE_ROUTE || '/'
 }

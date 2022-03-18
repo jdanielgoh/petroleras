@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import VisTraslapes from '../views/VisTraslapes.vue'
 import VisPetroleras from "../views/VisPetroleras.vue"
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/traslapes',
+    name: 'VisTraslapes',
+    component: VisTraslapes
   },
   {
     path: '/vispetroleras',
@@ -17,7 +17,7 @@ const routes = [
     component: VisPetroleras
   }
 ]
-
+console.log(process.env.BASE_URL)
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
